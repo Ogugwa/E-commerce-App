@@ -52,4 +52,7 @@ then i added the icon name
 <i class="fa-solid fa-star"></i>
 ```
 
-I also learnt how to write Naira in hmtl using the hexadecimal code &#8358;
+I also learnt how to write Naira in hmtl using the hexadecimal code
+```html
+ <p>&#8358;100 <p>
+ ```
