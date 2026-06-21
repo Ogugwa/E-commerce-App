@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
       @theme {
@@ -47,7 +48,7 @@
            
     </section>
     <!-- Feature Section -->
-     <section class="mt-2 mx-auto w-4/5 p-6 shadow-2xl rounded-3xl">
+     <section class="mt-2 mx-auto w-4/5 p-6 shadow-2xl rounded-3xl md:flex md:flex-row md:mt-8">
       <div class="flex items-center p-4 gap-4">
         <img src="./images/shipping-icon.png" alt="Shipping icon" class="bg-blue-300 rounded-full w-12 h-12 p-2 shrink-0"/>
         <span class="text-left">
@@ -77,5 +78,92 @@
         </span>
       </div>
      </section>
+     <!-- Fruits Display Section -->
+      <section class="flex flex-col justify-center items-center gap-4 md:grid md:grid-cols-3 md:grid-rows-2 md:gap-2 md:p-5">
+        <div class="relative rounded-2xl h-80 w-4/5 md:w-[30vw] md:h-60 overflow-hidden">
+          <img src="./images/sauce1.jpg" alt="Image of sauce" class="absolute inset-0 w-full h-full object-cover  "/>
+          <span class="relative z-10 flex flex-col justify-left  text-green-500 mt-14 ml-10">
+            <h4 class="text-3xl font-bold">50% Off</h4>
+            <h5 class="text-4xl font-black">Sauces</h5>
+          </span>
+        </div>
+        <div class="relative rounded-lg h-60 w-4/5 md:w-[30vw] overflow-hidden">
+          <img src="./images/chips.jpg" alt="Image of bags of chips" class="absolute inset-0 w-full h-full object-cover "/>
+          <span class="relative z-10 flex flex-col justify-left  text-white mt-14 ml-10 md:right-4 md:text-right">
+            <h4 class="text-3xl font-bold">50% Off</h4>
+            <h5 class="text-4xl font-black">All Chips</h5>
+          </span>
+        </div>
+         <div class="relative rounded-lg h-screen w-3/4 md:row-span-2 md:h-full overflow-hidden">
+          <img src="./images/banana.jpg" alt="Image of a bunch of banana" class="absolute inset-0 w-full h-full object-cover "/>
+          <span class="relative z-10 flex flex-col justify-center items-center  text-white mt-14 ml-10 gap-2">
+            <h4 class="text-3xl font-bold">50% Off</h4>
+            <h5 class="text-4xl font-black text-center">Sale 58% off All Food Products</h5>
+            <a class="inline-flex justify-center items-center w-24 h-12 p-2 rounded-full bg-gray-700 hover:bg-cyan-900 text-base" href="#">Shop Now</a>
+          </span>
+        </div>
+         <div class="relative rounded-lg h-[80vh] w-3/4 md:col-span-2 md:h-60 md:w-full overflow-hidden">
+          <img src="./images/veggies.jpg" alt="Image of a group of vegetables" class="absolute inset-0 w-full h-full  object-cover "/>
+          <span class="relative z-10 flex flex-col justify-left  text-green-500 mt-14 ml-10 gap-2">
+            <h4 class="text-3xl font-bold">50% Off</h4>
+            <h5 class="text-4xl font-black">Full Fresh Vegetables</h5>
+            <a class="inline-flex justify-center items-center text-white w-24 h-12 p-2 rounded-full bg-gray-700 hover:bg-cyan-900 text-base" href="#">Shop Now</a>
+          </span>
+        </div>         
+      </section>
+      <!-- Categories Section -->
+       <section class="flex flex-col justify-center items-center gap-4 overflow-hidden ">
+        <h6 class="text-4xl font-bold text-center">Discover our <br/><span class="text-green-800">Categories</span></h6>
+        <!-- Section Container -->
+        <div class="flex flex-col gap-4 md:flex-row md:gap-2 md:w-screen md:p-2 ">
+          <div class="flex flex-col justify-center items-center h-60 w-[70vw] border-2 rounded-lg md:flex-1">
+            <img src="./images/fish.png" alt="Fish Icon" class="h-22 w-14  fill-bg-green-800"/>
+            <h6 class="text-2xl font-bold text-center">Fish & Raw Meats</h6>
+          </div>
+          <div class="flex flex-col justify-center items-center h-60  w-[70vw] border-2 rounded-lg md:flex-1">
+            <img src="./images/healthy-food.png" alt="Vegetables" class="h-22 w-14  fill-bg-green-800"/>
+            <h6 class="text-2xl font-bold text-center">Fruits and Vegetables</h6>
+          </div>
+          <div class="flex flex-col justify-center items-center h-60  w-[70vw] border-2 rounded-lg md:flex-1">
+            <img src="./images/bread.png" alt="Bread" class="h-22 w-14  fill-bg-green-800"/>
+            <h6 class="text-2xl font-bold text-center">Bread and Sweets</h6>
+          </div>
+          <div class="flex flex-col justify-center items-center h-60 w-[70vw] border-2 rounded-lg md:flex-1">
+            <img src="./images/milk.png" alt="Milk Icon" class="h-22 w-14  fill-bg-green-800"/>
+            <h6 class="text-2xl font-bold text-center">Milks and Proteins</h6>
+          </div>
+          <div class="flex flex-col justify-center items-center h-60 w-[70vw] border-2 rounded-lg md:flex-1">
+            <img src="./images/cleaning-spray.png" alt="Cleaning Spray" class="h-22 w-14  fill-bg-green-800"/>
+            <h6 class="text-2xl font-bold text-center">Cleaning Materials</h6>
+          </div>
+          <div class="flex flex-col justify-center items-center h-60  w-[70vw] border-2 rounded-lg md:flex-1">
+            <img src="./images/canned-food.png" alt="Fish Icon" class="h-22 w-14  fill-bg-green-800"/>
+            <h6 class="text-2xl font-bold text-center">Ready to use Foods</h6>
+          </div>
+        </div>
+       </section>
+       <!-- Product Section -->
+        <section class="flex flex-col justify-center items-center mt-2">
+          <div class="flex flex-col justify-center items-center gap-2">
+            <h6 class="text-2xl font-bold text-center">Best Seller <span class="text-green-800">Products</span></h6>
+            <a href="#" class="inline-flex rounded-lg bg-green-500 text-[#036269] w-30 h-10 p-2 text-base font-medium">View all Products</a>
+          </div>
+          <!-- Cart Item Container -->
+           <div class="flex flex-col justify-center items-center gap-2 w-screen">
+            <div class="border-2 border-red-500 flex flex-col justify-center items-center rounded-lg shadow-md h-60 w-3/4">
+              <img  src="./images/banana2.jpg" alt="Banana" class="w-12 h-18"/>
+              <h6>Organic Banana</h6>
+              <p>Limited Edition</p>
+              <div class="flex [&>i]:text-amber-400">
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span> &#8358;700</span>
+            </div>
+           </div>
+        </section>
   </body>
 </html>

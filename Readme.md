@@ -38,3 +38,18 @@ So i had to fall back to the classic
 <script src="https://cdn.tailwindcss.com"></script>
 ```
 Rather than the version 4 install. This was a lot cause i spent over 2 hours debugging this.
+
+### Icons
+For this website i realised I have been using a lot of icons and I will still use more, so I decided to 
+use an Icon library [Font Awesome](https://docs.fontawesome.com/)
+
+I had to include this line of code in my head on the html 
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+```
+then i added the icon name
+```html
+<i class="fa-solid fa-star"></i>
+```
+
+I also learnt how to write Naira in hmtl using the hexadecimal code &#8358;
