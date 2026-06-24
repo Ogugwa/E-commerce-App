@@ -1,11 +1,210 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>This is the Sign Up page</h1>
-</body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head> 
+  <body>
+    <nav class="flex justify-between items-center p-8 h-20 px-10 dark:text-white dark:bg-[#122d40]">
+      <h1 class="text-2xl font-bold md:text-4xl">DeMarket</h1>
+      <div class="flex gap-4 md:hidden">
+        <img src="../images/cart-icon.png" alt="Cart icon" class="w-12 h-12 "/>
+        <img src="../images/menu-icon.png" alt="Menu icon"  class="w-12 h-12 "/>
+      </div>
+      <ul class="hidden md:flex gap-4 text-lg [&>li>a:hover]:text-blue-500 ">
+        <li><a href="../index.html">Home</a></li>
+        <li ><a href="../pages/about.html">About</a></li>
+       <li><a href="../pages/contact.html" >Contact</a></li>
+      </ul>
+      <div class="hidden md:flex gap-4 text-lg md:flex-row md:items-center">
+       <a href="#" class="inline-flex items-center justify-center w-24 h-12 py-2 px-4 rounded-full bg-emerald-500 hover:bg-emerald-600 transition underline ">Sign Up</a>
+        <a href="../pages/login.html" class="hover:text-blue-500 text-center">Log In</a>
+      </div>
+    </nav>
+    <!-- SIGN UP SECTION -->
+
+<section class="min-h-[calc(100vh-80px)] bg-gray-100 flex items-center justify-center py-10 px-6">
+
+  <div class="max-w-6xl w-full bg-white rounded-3xl shadow-xl overflow-hidden">
+
+```
+<div class="grid md:grid-cols-2">
+
+  <!-- LEFT SIDE -->
+  <div class="hidden md:flex flex-col justify-center items-center bg-emerald-500 text-white p-12">
+
+    <h1 class="text-5xl font-bold mb-6">
+      Welcome to DeMarket
+    </h1>
+
+    <p class="text-lg text-center leading-8 mb-8">
+      Create an account and enjoy a smarter way to shop for groceries,
+      household essentials, and fresh products.
+    </p>
+
+    <img
+      src="../images/Ad-image.png"
+      alt="DeMarket App"
+      class="w-64"
+    />
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="p-8 md:p-12">
+
+    <div class="max-w-md mx-auto">
+
+      <h2 class="text-3xl font-bold mb-2">
+        Create Account
+      </h2>
+
+      <p class="text-gray-500 mb-8">
+        Join thousands of customers shopping with DeMarket.
+      </p>
+
+      <form class="space-y-5">
+
+        <!-- FULL NAME -->
+        <div>
+          <label class="block mb-2 font-medium">
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            placeholder="Enter your full name"
+            class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        <!-- EMAIL -->
+        <div>
+          <label class="block mb-2 font-medium">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        <!-- PHONE -->
+        <div>
+          <label class="block mb-2 font-medium">
+            Phone Number
+          </label>
+
+          <input
+            type="tel"
+            placeholder="Enter your phone number"
+            class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        <!-- PASSWORD -->
+        <div>
+          <label class="block mb-2 font-medium">
+            Password
+          </label>
+
+          <input
+            type="password"
+            placeholder="Create a password"
+            class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        <!-- CONFIRM PASSWORD -->
+        <div>
+          <label class="block mb-2 font-medium">
+            Confirm Password
+          </label>
+
+          <input
+            type="password"
+            placeholder="Confirm your password"
+            class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        <!-- TERMS -->
+        <div class="flex items-start gap-3">
+
+          <input
+            type="checkbox"
+            class="mt-1 accent-emerald-500"
+          />
+
+          <p class="text-sm text-gray-600">
+            I agree to the Terms of Service and Privacy Policy.
+          </p>
+
+        </div>
+
+        <!-- BUTTON -->
+        <button
+          type="submit"
+          class="w-full bg-emerald-500 text-white py-3 rounded-lg font-semibold hover:bg-emerald-600 transition"
+        >
+          Create Account
+        </button>
+
+      </form>
+
+      <!-- DIVIDER -->
+      <div class="flex items-center gap-4 my-6">
+
+        <div class="h-px bg-gray-300 flex-1"></div>
+
+        <span class="text-gray-500 text-sm">
+          OR
+        </span>
+
+        <div class="h-px bg-gray-300 flex-1"></div>
+
+      </div>
+
+      <!-- GOOGLE BUTTON -->
+      <button
+        class="w-full border border-gray-300 py-3 rounded-lg flex items-center justify-center gap-3 hover:bg-gray-50"
+      >
+        <i class="fa-brands fa-google"></i>
+        Continue with Google
+      </button>
+
+      <!-- LOGIN LINK -->
+      <p class="text-center mt-6 text-gray-600">
+        Already have an account?
+
+        <a
+          href="./login.html"
+          class="text-emerald-500 font-semibold hover:underline"
+        >
+          Log In
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+    </body>
 </html>
