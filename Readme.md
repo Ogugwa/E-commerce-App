@@ -56,3 +56,6 @@ I also learnt how to write Naira in hmtl using the hexadecimal code
 ```html
  <p>&#8358;100 <p>
  ```
+
+ For the font awesom icons i realised styling them with regualr taiwlind classes for height and width does not work and their styling requires styling them using text- rather than height ans width
+ 
